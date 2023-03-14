@@ -970,7 +970,7 @@ footer a:hover {
     }
     
 }
-
+/*Product Card*/
 
 body {
     background-color: #fdf1ec;
@@ -1011,8 +1011,8 @@ body {
   }
   
   .product-text h1 {
-    margin: 0 0 0 38px;
-    padding-top: 40px;
+    margin: 0 0 0 20px;
+    padding-top: 20px;
     font-size: 34px;
     color: #474747;
   }
@@ -1023,7 +1023,7 @@ body {
   }
   
   .product-text h2 {
-    margin: 0 0 47px 38px;
+    margin: 0 0 30px 15px;
     font-size: 13px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -1034,7 +1034,7 @@ body {
   
   .product-text p {
     height: 125px;
-    margin: 0 0 0 38px;
+    margin: 0 0 0 20px;
     font-family: 'Playfair Display', serif;
     color: #8d8d8d;
     line-height: 1.7em;
@@ -1046,7 +1046,7 @@ body {
   .product-price-btn {
     height: 103px;
     width: 327px;
-    margin-top: 40px;
+    margin-top: 50px;
     position: relative;
   }
   
@@ -1056,7 +1056,7 @@ body {
     top: -13px;
     height: 50px;
     font-family: 'Trocchi', serif;
-    margin: 0 0 0 38px;
+    margin: 0 0 0 -120px;
     font-size: 28px;
     font-weight: lighter;
     color: #474747;
@@ -1092,3 +1092,73 @@ body {
   .product-price-btn button:hover {
     background-color: #79b0a1;
   }
+
+  /*column*/
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* Responsive columns */
+@media screen and (max-width: 1000px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+
+  .card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.4);
+  }
+  
+ /* img {
+    border-radius: 10px 10px 10px 10px;
+  }
+
+    /* Style the counter cards */
+    .card {
+        height: 420px;
+        width: 654px;
+        margin: 50px auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: #f1f1f1;
+        transition: 0.3s;
+        border-radius: 7px 7px 7px 7px;
+      }
+      
+
+      
