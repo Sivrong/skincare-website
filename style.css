@@ -74,7 +74,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px 80px;
+<<<<<<< HEAD
+    background: #ecbbd3;
+=======
     background: white;
+>>>>>>> d593c8c637b2d94591ae0563f9cdfc0c55b5cecb
     position: sticky;
     top: 0;
     left: 0;
@@ -91,7 +95,7 @@ body {
 #navbar li {
     list-style: none;
     padding: 0 30px;
-    padding-top: 10px;
+    padding-top: 1px;
     position: relative;
 }
 
