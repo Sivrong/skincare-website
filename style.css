@@ -619,6 +619,10 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+}
+#page-header.contact-header {
+    background-image: url("img/banner1.jpg");
 }
 
 #contact-details .details {
