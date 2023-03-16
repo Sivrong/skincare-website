@@ -22,7 +22,7 @@
 
 4 get latest code from git server
 ==================================
-git clone https://github.com/Sorasori22/test1.git
+git clone https://github.com/Sivrong/skincare-website.git
 or
 git pull
 
