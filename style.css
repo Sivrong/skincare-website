@@ -74,11 +74,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px 80px;
-<<<<<<< HEAD
-    background: #ecbbd3;
-=======
-    background: white;
->>>>>>> d593c8c637b2d94591ae0563f9cdfc0c55b5cecb
+    background: #ffff;
     position: sticky;
     top: 0;
     left: 0;
