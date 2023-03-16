@@ -74,7 +74,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px 80px;
+<<<<<<< HEAD
     background: #ecbbd3;
+=======
+    background: white;
+>>>>>>> d593c8c637b2d94591ae0563f9cdfc0c55b5cecb
     position: sticky;
     top: 0;
     left: 0;
@@ -408,7 +412,7 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-image: url("img/banner/b1.jpg");
+    background-image: url("img/banner.jpg");
     background-size: cover;
     padding: 14px;
 }
@@ -507,7 +511,7 @@ footer a:hover {
 }
 
 #page-header.blog-header {
-    background-image: url("img/banner/b19.jpg");
+    background-image: url("img/banner.jpg");
 }
 
 #blog .blog-box {
@@ -575,7 +579,7 @@ footer a:hover {
 /* About Page */
 
 #page-header.about-header {
-    background-image: url("img/about/banner.jpg");
+    background-image: url("img/banner.jpg");
 }
 
 #about-head {
@@ -918,6 +922,9 @@ footer a:hover {
     h2 {
         font-size: 32px;
     }
+    h3 {
+        font-size: 29px;
+    }
     #header {
         padding: 10px 30px;
     }
@@ -967,32 +974,195 @@ footer a:hover {
     }
     
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
+/*Product Card*/
+
+body {
+    background-color: #fdf1ec;
   }
   
-  .price {
-    color: grey;
-    font-size: 22px;
+  .wrapper {
+    height: 420px;
+    width: 654px;
+    margin: 50px auto;
+    border-radius: 7px 7px 7px 7px;
+    /* VIA CSS MATIC https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   }
   
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
+  .product-img {
+    float: left;
+    height: 420px;
+    width: 327px;
+  }
+  
+  .product-img img {
+    border-radius: 7px 0 0 7px;
+  }
+  
+  .product-info {
+    float: left;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
+  }
+  
+  .product-text {
+    height: 280px;
+    width: 327px;
+  }
+  
+  .product-text h1 {
+    margin: 0 0 0 20px;
+    padding-top: 20px;
+    font-size: 34px;
+    color: #474747;
+  }
+  
+  .product-text h1,
+  .product-price-btn p {
+    font-family: 'Bentham', serif;
+  }
+  
+  .product-text h2 {
+    margin: 0 0 30px 15px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: 0.2em;
+  }
+  
+  .product-text p {
+    height: 125px;
+    margin: 0 0 0 20px;
+    font-family: 'Playfair Display', serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+  }
+  
+  .product-price-btn {
+    height: 103px;
+    width: 327px;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .product-price-btn p {
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    height: 50px;
+    font-family: 'Trocchi', serif;
+    margin: 0 0 0 -120px;
+    font-size: 28px;
+    font-weight: lighter;
+    color: #474747;
+  }
+  
+  span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+  
+  .product-price-btn button {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #9cebd5;
     cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+    outline: none;
   }
   
-  .card button:hover {
-    opacity: 0.7;
+  .product-price-btn button:hover {
+    background-color: #79b0a1;
   }
 
+  /*column*/
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* Responsive columns */
+@media screen and (max-width: 1000px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+
+  .card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.4);
+  }
+  
+ /* img {
+    border-radius: 10px 10px 10px 10px;
+  }
+
+    /* Style the counter cards */
+    .card {
+        height: 420px;
+        width: 654px;
+        margin: 50px auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: #f1f1f1;
+        transition: 0.3s;
+        border-radius: 7px 7px 7px 7px;
+      }
+      
+
+      
